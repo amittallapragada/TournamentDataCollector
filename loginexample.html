@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Debate Manager</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+  	$(function(){
+		  $("#sign_up").load("sign_up.html"); 
+		  $("#tester").load("tester.html");
+		});
+  </script>
+<style>
+
+	body {
+	}
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	li {
+	    display: inline;
+	}
+
+	h1 {
+	    color: black;
+		font-size: 500%;
+
+	    margin-left: 40px;
+	}
+	h2 {
+	    color: white;
+		font-size: 400%;
+		font-weight: 900;
+	    margin-left: 40px;
+	}
+
+
+	h3{
+		color: black;
+		font-size:300%;
+	}
+
+
+	p {
+	    color: black;
+		 font-size: 300%;
+		font-weight: 600;
+	    margin-left: 60px;
+
+	}
+	
+	.container{
+	  position: relative;
+	  top:10px;
+	width: 100%;
+
+	}
+	.home{
+		height: 500px;
+	}
+
+
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+
+
+
+	form{
+		background-color: #D3D3D3;
+		width:500px;
+		height:500px;
+		position: fixed;
+		left:35%;
+		margin-top: 5%;
+		border-radius: 10px;
+	}
+</style>
+</head>
+<body>
+
+
+<script language="javascript">
+				function check(form)
+				{
+						
+					if(form.userid.value == "a" && form.pswrd.value == "abc")
+					{
+						window.location = ('website.html')
+					}
+					else
+					{
+						alert("Wrong Password!")
+					}
+				}
+			</script>
+</body>
+
+</head>
+<body>
+<div class = "container"><!-- div2 for contents in nav bar -->
+			<ul class = "nav nav-tabs">
+
+				<li class = "active"><a data-toggle="tab" href="#home">Home</a></li>
+				<li><a data-toggle="tab" href="#about">About Us</a></li>
+        		<li><a data-toggle="tab" href="#signup">Sign Up!</a></li>
+        		<li><a type="button" onclick="window.location = 'student_login.html'" >Student Log In!</a></li>
+        		<li><a type="button" onclick="window.location = 'admin_login.html'" >Admin Log In!</a></li>
+
+
+			</ul>
+
+		<div class="tab-content">
+
+			<div id="home" class="tab-pane fade in active">
+				<div id = "tester"></div>
+			</div>
+
+			<div id="about" class="tab-pane fade">
+				<h3>About Us</h3>
+				<p>Welcome to the Debate Manager website! </p>
+				<img src="Gulsham.jpg" alt="Crasslies" style="width:300px;height:300px;">
+			</div>
+				 <div id="signup" class="tab-pane fade">
+      			 <h3>Sign Up Today!</h3>
+      			<div id="sign_up"></div>
+	  		</div>
+
+
+		</div>
+
+			
+
+     
+
+		</div>
+</div>
+
+</body>
+</html>

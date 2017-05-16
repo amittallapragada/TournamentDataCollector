@@ -1,0 +1,35 @@
+<html>
+	<head>
+	<title>Captain Crassly</title>
+		<script src="jquery/jquery.js"></script>
+		<script> 
+		$(function(){
+		  $("#header").load("admin_header.html"); 
+		});
+		</script>
+		<style>
+			form{
+				text-align: center;
+				font-size: 20px;
+			}
+			h1{
+				text-align: center;
+				padding: 20px;
+			}
+			
+			
+		</style>
+
+	</head>
+	<body>
+		<div id="header" ></div>
+			<h1>Admin Tournament Registration</h1>
+
+				<form action ="tournament_database.php" method="POST">
+				Tournament Name: <br><input type="text" name="tournament_name"><br>
+				Judges Needed: <br><input type="text" name="judges_needed"><br><br>
+				<input type ="submit" value="Submit"/>
+				</form>
+
+	</body>
+</html>
